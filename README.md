@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Shopping Cart App
+
+### Live Site URL: [https://shopping-cart-by-abhirup.netlify.app](https://shopping-cart-by-abhirup.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
