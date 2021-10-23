@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 function ProductCard(props) {
-  const [isAdded, setIsAdded] = useState(false)
+  const [isAdded, setIsAdded] = useState(props.isAdded)
 
   return (
     <div className="product-card">

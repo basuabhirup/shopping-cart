@@ -6,7 +6,9 @@ function ProductsList(props) {
   return (
     <div className="products-list">
       <h2>Products</h2>
-      {products.map(product => (
+      {products
+        .filter(product => !props.productsInCart.includes(product._id))
+        .map(product => (
         <ProductCard 
           key={product._id}
           id={product._id}
@@ -17,6 +19,7 @@ function ProductsList(props) {
           availableSizes={product.availableSizes}
           addToCart={props.addToCart}
           removeFromCart={props.removeFromCart}
+          isAdded={false}
         />
       ))}
       
