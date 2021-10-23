@@ -1,0 +1,40 @@
+.app {
+  text-align: center;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+
+
+.product-card {
+  border: 2px solid #DDD;
+  border-radius: 12px;
+}
+
+.product-card img {  
+  margin: 0.25rem 1rem;
+  border: 2px solid #DDD;
+  border-radius: 12px;
+}
+
+.size {
+  margin: 0 0.5rem;
+  min-width: 2rem;
+  background-color: #EEE;
+}
+
+.card-bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.product-card button {
+  margin: 1rem auto;
+}
