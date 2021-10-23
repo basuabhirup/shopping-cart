@@ -2,7 +2,7 @@ import React from 'react'
 import ProductCard from './ProductCard';
 import products from '../all-products';
 
-function ProductsList() {
+function ProductsList(props) {
   return (
     <div className="products-list">
       <h2>Products</h2>
@@ -15,6 +15,8 @@ function ProductsList() {
           description={product.description}
           price={product.price}
           availableSizes={product.availableSizes}
+          addToCart={props.addToCart}
+          removeFromCart={props.removeFromCart}
         />
       ))}
       

@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function ProductCard(props) {
+  const [isAdded, setIsAdded] = useState(false)
+
   return (
     <div className="product-card">
       <h3>{props.title}</h3>
@@ -14,7 +16,24 @@ function ProductCard(props) {
           ))}
         </div>
       </div>
-      <button>Add to Cart</button>
+      <button 
+        style={{display: isAdded ? "none" : "inline-block"}}
+        onClick={() => {
+          props.addToCart(props.id)
+          setIsAdded(true);
+        }}
+      >
+      Add to Cart
+      </button>
+      <button 
+        style={{display: isAdded ? "inline-block" : "none"}}
+        onClick={() => {
+          props.removeFromCart(props.id);
+          setIsAdded(false);
+        }}
+      >
+      Remove from Cart
+      </button>
     </div>
   )
 }
