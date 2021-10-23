@@ -9,11 +9,10 @@
   justify-content: space-around;
 }
 
-
-
 .product-card {
   border: 2px solid #DDD;
   border-radius: 12px;
+  margin: 1rem;
 }
 
 .product-card img {  
@@ -37,4 +36,13 @@
 
 .product-card button {
   margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #DDD;
+}
+
+.product-card button:hover {
+  cursor: pointer;  
+  border: 1px solid #888;
+  font-weight: 600;
 }

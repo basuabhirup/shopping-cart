@@ -19,7 +19,6 @@ const [isInCart, setIsInCart] = useState(true);
           description={product.description}
           price={product.price}
           availableSizes={product.availableSizes}
-          addToCart={props.addToCart}
           removeFromCart={props.removeFromCart}
           isAdded={true}
           isInCart={isInCart}

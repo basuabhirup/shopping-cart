@@ -17,7 +17,6 @@ function ProductsList(props) {
           price={product.price}
           availableSizes={product.availableSizes}
           addToCart={props.addToCart}
-          removeFromCart={props.removeFromCart}
           isAdded={false}          
           isInCart={false}
         />
