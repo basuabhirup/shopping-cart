@@ -16,8 +16,8 @@ function ProductCard(props) {
           ))}
         </div>
       </div>
-      <button 
-        style={{display: isAdded ? "none" : "inline-block"}}
+      <button
+        style={{display: !props.isInCart ? "inline-block" : "none"}}
         onClick={() => {
           props.addToCart(props.id)
           setIsAdded(true);
@@ -26,7 +26,7 @@ function ProductCard(props) {
       Add to Cart
       </button>
       <button 
-        style={{display: isAdded ? "inline-block" : "none"}}
+        style={{display: isAdded && props.isInCart ? "inline-block" : "none"}}
         onClick={() => {
           props.removeFromCart(props.id);
           setIsAdded(false);

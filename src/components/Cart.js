@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ProductCard from './ProductCard';
 import products from '../all-products';
 
 function Cart(props) {
+const [isInCart, setIsInCart] = useState(true);
+
   return (
     <div className="cart">
       <h2>Cart</h2>
@@ -20,6 +22,8 @@ function Cart(props) {
           addToCart={props.addToCart}
           removeFromCart={props.removeFromCart}
           isAdded={true}
+          isInCart={isInCart}
+          setIsInCart={setIsInCart}
         />
         ))
       }
